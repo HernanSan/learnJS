@@ -115,4 +115,12 @@ console.log("Total: ", total);
     console.log(contacts[contacts.length - 1]);
     console.log(`El nombre de la persona es ${contacts[0].name} y su telefono es ${contacts[0].phone}`);
     console.log(`El nombre de la persona es ${contacts[contacts.length - 1].name} y su telefono es ${contacts[contacts.length - 1].phone}`);
+
+}
+
+{
+    
+    let year = 2050;
+    let newYear = year = 2051;
+    console.log("AÑO", year);
 }

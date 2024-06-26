@@ -180,4 +180,48 @@ console.log(`number is type of ${typeof(number2)} su valor es ${number2}`);
 
    
     }
+    {
+        /*
+        // Ejercico de intereccion con el usuario usando alertas y prompt
+        let width = prompt("Volume of the box, enter width", 0);
+        let height = prompt("Volume of the box, enter height", 0);
+        let length = prompt("Volume of the box, enter length", 0);
+        let volume = width * height * length;
+        alert(`Calculated box volume is ${volume}`);
+        */
+    }
+    {
+        // LAb Interección
+        let contacts = [{
+            name: "Maxwell Wright",
+            phone: "(0191) 719 6495",
+            email: "Curabitur.egestas.nunc@nonummyac.co.uk"
+            }, {
+            name: "Raja Villarreal",
+            phone: "0866 398 2895",
+            email: "posuere.vulputate@sed.com"
+            }, {
+            name: "Helen Richards",
+            phone: "0800 1111",
+            email: "libero@convallis.edu"
+            }];
+            
+            let newContact;
+            let newPhone;
+            let newEmail;
+
+            do {
+                newContact = prompt("Enter new contact name", "Name");
+                newPhone = prompt("Enter new contact phone", "Phone");
+                newEmail = prompt("Enter new contact email", "Email");
+                contacts.push({ name: newContact, phone: newPhone, email: newEmail });
+                // presentar el primer contacto
+                alert(`First contact: ${contacts[0].name}`);
+                // ultimo contacto ingresado
+                alert(`New contact added: ${newContact}`);
+            } while (confirm("Do you want to add another contact?"));
+
+            console.log(`${contacts[0].name} / ${contacts[0].phone} / ${contacts[0].email}`);
+            console.log(`${contacts[contacts.length -1].name} / ${contacts[contacts.length -1].phone} / ${contacts[contacts.length -1].email}`);
+    }
 }
